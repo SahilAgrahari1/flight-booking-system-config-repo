@@ -1,17 +1,25 @@
 server:
+  port: 8083
+
 spring:
-  application:
-    name: booking-service
   datasource:
     url: jdbc:mysql://localhost:3306/flight_booking_db
     username: root
     password: Sahil@2846
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
-      ddl-auto: 5
-flight-service:
-  url: http://flight-service:8082
+      ddl-auto: update
+    show-sql: true
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
