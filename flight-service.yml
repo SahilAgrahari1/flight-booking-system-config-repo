@@ -1,0 +1,11 @@
+server:
+spring:
+  application:
+    name: flight-service
+  datasource:
+    username: jdbc:mysql://localhost:3306/flight_booking_db
+    password: root
+    password: Sahil@2846
+  jpa:
+    hibernate:
+      id: flight-service
