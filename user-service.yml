@@ -15,4 +15,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 jwt:
-  secret: your-secure-jwt-secret-key-1234567890
+  secret: X7k9pQz2mW8vT3rY6uJ0nF4bL1cH5gD8
