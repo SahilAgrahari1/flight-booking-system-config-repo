@@ -32,7 +32,6 @@ spring:
           uri: lb://ADMIN-SERVICE
           predicates:
             - Path=/api/admin/**
-spring:
   security:
     oauth2:
       resourceserver:
